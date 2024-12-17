@@ -1,0 +1,127 @@
+/* Navbar.module.css */
+
+/* General navbar styles */
+.navbar {
+  background-color: white;
+  padding: 10px;
+  color: #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;  /* Ensures items are spaced out */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: grey;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.header{
+  align-items :center;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+}
+
+/* Search Field - align to the right */
+.search {
+  margin-left: auto; /* Pushes the search field to the right */
+  
+}
+
+.search input {
+  padding: 6px;
+  font-size: 14px;
+  width: 200px; /* Adjust width if needed */
+  background-color: #e5e7eb;
+  border-radius: 5px;
+}
+
+/* Desktop Menu */
+.desktop {
+  display: flex;
+  justify-content: flex-start;  /* Align items to the left */
+  margin-left: auto;
+  flex-grow: 1;
+}
+
+.desktop li {
+  margin: 0 15px;
+}
+
+/* Mobile Menu */
+.mobile {
+  display: none;
+}
+
+.remove{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .desktop {
+    display: none;  /* Hide desktop menu */
+  }
+
+  .hamburger {
+    display: block;  /* Show hamburger button */
+  }
+
+  .search{
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .remove{
+    display: block;
+  }
+
+  .mobile {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 66px;
+
+  }
+
+  /* Mobile Search */
+  .mobile input {
+    width: 100%;  /* Make search input full width on mobile */
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
