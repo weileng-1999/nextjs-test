@@ -1,8 +1,8 @@
-'use client'; // This marks the component as a client component
+'use client';
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "../styles//Navbar.module.css";  // Import the CSS module
+import styles from "../styles//Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
