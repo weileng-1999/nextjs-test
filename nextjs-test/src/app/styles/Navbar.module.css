@@ -8,6 +8,11 @@
   border-bottom: 1px solid #e5e7eb;
 }
 
+.title{
+  color: grey;
+  font-size: 14px;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;  /* Ensures items are spaced out */
@@ -35,6 +40,7 @@
 
 .header{
   align-items :center;
+  gap: 20px;
 }
 
 .menu li {
@@ -70,7 +76,7 @@
 }
 
 .desktop li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 /* Mobile Menu */
@@ -94,7 +100,7 @@
 
   .search{
     width: 100%;
-    padding-left: 10px;
+    padding: 0 10px;
   }
 
   .search input {

@@ -10,19 +10,21 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles["navbar-container"]}>
-
-
-        {/* Hamburger Menu */}
-        <button
-          className={styles.hamburger}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? '✖' : '☰'}
-        </button>
+        
+        <a href="/" className={`${styles.title} ${styles.remove}`}>AEON</a>
+       
         {/* Search Field */}
         <div className={`${styles.search} ${styles.remove}`} >
             <input type="text" placeholder="Search documentation..." />
-          </div>
+        </div>
+
+           {/* Hamburger Menu */}
+            <button
+              className={styles.hamburger}
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? '✖' : '☰'}
+            </button>
       </div>
 
       {/* Collapsible Menu for Mobile */}
@@ -42,6 +44,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className={`${styles.header} ${styles.desktop}`}>
+        <div><a href="/" className={styles.title}>AEON</a></div>
           <ul className={`${styles.menu} ${styles.desktop}`}>
             <li><Link href="#">Showcase</Link></li>
             <li><Link href="#">Docs</Link></li>
