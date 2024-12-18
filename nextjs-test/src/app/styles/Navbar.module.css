@@ -83,6 +83,12 @@
   display: none;
 }
 
+.loginButton{
+  padding: 10px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
   /* Mobile */
   .desktop {

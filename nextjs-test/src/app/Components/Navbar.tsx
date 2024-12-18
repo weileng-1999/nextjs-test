@@ -52,7 +52,7 @@ const Navbar = () => {
             <li><Link href="#">Analytics</Link></li>
             <li><Link href="#">Commerce</Link></li>
             <li><Link href="#">Templates</Link></li>
-            <li><Link href="/login">Login</Link></li>
+            <li><Link className={styles.loginButton} href="/login">Login</Link></li>
           </ul>
           <div className={styles.search}>
             <input type="text" placeholder="Search documentation..." />
